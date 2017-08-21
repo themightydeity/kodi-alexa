@@ -704,6 +704,12 @@
       "intent": "CurrentPlayItemInquiry"
     },
     {
+      "intent": "TVOnExecute"
+    },
+    {
+      "intent": "TVOffExecute"
+    },
+    {
       "intent": "CurrentPlayItemTimeRemaining"
     },
     {

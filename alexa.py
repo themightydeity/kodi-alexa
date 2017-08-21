@@ -1819,6 +1819,42 @@ def alexa_update_audio():
   return statement(card_title).simple_card(card_title, "")
 
 
+# Handle the TVOnExecute intent.
+@ask.intent('TVOnExecute')
+def alexa_tvon_execute():
+  card_title = render_template('open_tv').encode("utf-8")
+  print card_title
+
+  kodi = Kodi(config, context)
+  addon = kodi.FindAddon("TV Control")
+  if len(addon) > 0:
+    kodi.Home()
+    kodi.AddonExecute(addon[0][0])
+    response_text = render_template('opening_tv', heard_name=addon[0][1]).encode("utf-8")
+    return statement(response_text).simple_card(card_title, response_text)
+  else:
+    response_text = render_template('could_not_find_addon', heard_addon="TV Control").encode("utf-8")
+
+  return statement(response_text).simple_card(card_title, response_text)
+
+# Handle the TVOnExecute intent.
+@ask.intent('TVOffExecute')
+def alexa_tvoff_execute():
+  card_title = render_template('close_tv').encode("utf-8")
+  print card_title
+
+  kodi = Kodi(config, context)
+  addon = kodi.FindAddon("TV Control")
+  if len(addon) > 0:
+    kodi.Home()
+    kodi.AddonExecute(addon[0][0])
+    response_text = render_template('closing_tv', heard_name=addon[0][1]).encode("utf-8")
+    return statement(response_text).simple_card(card_title, response_text)
+  else:
+    response_text = render_template('could_not_find_addon', heard_addon="TV Control").encode("utf-8")
+
+  return statement(response_text).simple_card(card_title, response_text)
+
 # Handle the AddonExecute intent.
 @ask.intent('AddonExecute')
 def alexa_addon_execute(Addon):

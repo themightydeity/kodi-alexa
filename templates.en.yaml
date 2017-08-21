@@ -70,6 +70,10 @@ searching: "Searching for {{ heard_name }}"
 
 opening: "Opening {{ heard_name }}"
 
+opening_tv: "Opening TV"
+
+closing_tv: "Closing TV"
+
 playing: "Playing {{ heard_name }}"
 
 playing_genre: "Playing {{ genre_name }} music"
@@ -376,6 +380,10 @@ party_mode: "Party Mode"
 albums_by: "Albums by {{ heard_artist }}"
 
 open_addon: "Opening addon"
+
+open_tv: "Opening tv"
+
+close_tv: "Closing tv"
 
 search: "Search"
 

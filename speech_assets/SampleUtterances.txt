@@ -1,3 +1,15 @@
+TVOnExecute open tv
+TVOnExecute open the tv
+TVOnExecute turn on the tv
+TVOnExecute turn on tv
+TVOnExecute turn the tv on
+TVOnExecute turn tv on 
+TVOffExecute close tv
+TVOffExecute close the tv
+TVOffExecute turn off tv
+TVOffExecute turn off the tv
+TVOffExecute turn the tv off
+TVOffExecute turn tv off 
 AddonExecute execute add on {Addon}
 AddonExecute execute addon {Addon}
 AddonExecute execute plug in {Addon}

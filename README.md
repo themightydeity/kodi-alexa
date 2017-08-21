@@ -1,5 +1,10 @@
 # Alexa integration with Kodi
 
+### This fork adds capability of turning on the TV using HDMI-CEC (If it is available in your Kodi box), you need [script.cectvcontrol
+](https://github.com/themightydeity/script.cectvcontrol) Kodi addon for it to work
+- Turn on the tv
+- Turn off the tv
+
 ## Updating
 
 If you are updating from a previous version, **it is very important that you browse to the UPGRADING.md file and look at what you need to do.**
